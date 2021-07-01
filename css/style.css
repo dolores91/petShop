@@ -2,16 +2,52 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
-.footer-top{
-    background-color: #3C2313;
-    color: #FFFFFF;
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.footer-bottom{
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+body{
+     font-family:;
+     font-weight: 300px;
+}
+ img{
+     max-width: 100%; /*(para que no rompa en responsive)*/
+ }
+ /*---------------------------HEADER-------------------------------*/
+
+.header-top{
     background-color: #222222;
-    color: #FFFFFF;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.header-of{
+    font-size: 10px;
+    color: #FFF;
+    font-weight: lighter;
+    margin: 0%;
+}
+
+.header-opciones{
+    font-size: 10px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+}
+.header-opciones li{
+
+margin: 3px;
 }
 li{
 list-style: none; 
@@ -21,23 +57,59 @@ nav{
     background-color: #F0A83E;
     height: 62px;
     top: 20px;
-    
-
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 1.5%;
 
 }
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.header-top{
+ 
+background-color: #222222;
+font-family: Roboto;
+font-size: 10px;
+color: #F3F3F3;
+
+}
+
+ /*---------------------------MAIN-------------------------------*/
+
 .heroe{
     background-image: url("../img/hero.png");
-    background-repeat: cover;
-    height: 409px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
     
+}
+.blanco{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 2%;
+}
+.descuento{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 7%;
 }
 .heroe a{
     text-decoration: none;
-    position: absolute;
-width: 141px;
-height: 49px;
-left: 767px;
-top: 334px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10%;
+    text-align: center;
 
 background: #F0A83E;
 border-radius: 5px;
@@ -46,10 +118,78 @@ color: #FFFFFF;
 font-size: 16px;
 line-height: 19px;
 }
-.header-top{
- 
-background-color: #222222;
-font-family: Roboto;
-font-size: 10px;
-color: #F3F3F3;
+ /*---------------------------FOOTER-------------------------------*/
+
+.footer-top{
+    background-color: #3C2313;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    gap: 20%;
+    margin: 5%;
+}
+.logo-footer{
+    
+}
+.footer-bottom{
+    background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footer-top p{
+    color: #8A8787;
+    /*margin-left: 5%;*/
+}
+.footer-top span{
+    font-size: 20px;
+    font-weight: 700;
+    /*margin: 2%;*/
+}
+.footer-top i{
+    /*margin-top: 1.2%;
+    margin-left: 1%;*/
+}
+.barra{
+    background-color: #F0A83E;
+    color: #F3F3F3;
+    font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+height: 60px;
+justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------- RESPONSIVE DESIGN CELULAR---------------------*/
+@media only screen and (max-width: 414px) {
+    body {
+    
+       
+      background-color: lightgreen;
+    }
+  }
+  
