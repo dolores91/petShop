@@ -45,8 +45,10 @@ body{
     align-items: center;
     margin: 0%;
 }
+.logo{
+    margin-left: 3%;
+}
 .header-opciones li{
-
 margin: 3px;
 }
 li{
@@ -75,14 +77,16 @@ font-size: 10px;
 color: #F3F3F3;
 
 }
-
+.hamburguesa{
+   display: none;
+}
  /*---------------------------MAIN-------------------------------*/
 
 .heroe{
     background-image: url("../img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 450px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -110,13 +114,111 @@ color: #F3F3F3;
     border-radius: 5px;
     margin-right: 10%;
     text-align: center;
-
 background: #F0A83E;
 border-radius: 5px;
 text-align: center;
 color: #FFFFFF;
 font-size: 16px;
 line-height: 19px;
+}
+.card1{
+    background-size: 100%;
+  background-image: url(../img/churrasquito.png);
+  width: 265px;
+height: 268.86px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+.card1 p{
+    align-self: center;
+    font-weight: 500;
+    font-size: 15px;
+}    
+.card2 p{
+    align-self: center;
+    font-weight: 500;
+    font-size: 15px;
+}
+.card3 p{
+    align-self: center;
+    font-weight: 500;
+    font-size: 15px;
+}   
+.precio{
+    align-self: center;
+    color: #F0A83E;
+    
+}
+
+.card2{
+    
+    background-size: 100%;
+    background-image: url(../img/comedero.png);
+    width: 265px;
+height: 268.86px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+  }
+  .card3{
+    
+    background-size: 100%;
+    background-image: url(../img/Huesito.png);
+    width: 265px;
+height: 268.86px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+  }
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 8%;
+}
+.main-top{
+    text-align: center;
+
+}
+.main-top a{
+    color: #666666;
+}
+h2{
+    color: #3C2313;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    background-color: #3C2313;
+    border-radius: 15px;
+    width: 340px;
+height: 40px;
+margin: 1%;
+}
+.button{
+   display: flex;
+   justify-content: center;
+   gap:1%;
+   margin-bottom: 5%;
+}
+button{
+    width: 110px;
+height: 34px;
+border-radius: 15px;
+}
+.reset{
+    background-color: #8A8787;
+}
+.submit{
+    background-color: #F0A83E;
 }
  /*---------------------------FOOTER-------------------------------*/
 
@@ -142,7 +244,7 @@ line-height: 19px;
     margin: 5%;
 }
 .logo-footer{
-    
+    margin-right: 3%;
 }
 .footer-bottom{
     background-color: #222222;
@@ -187,9 +289,26 @@ justify-content: space-between;
 /*----------------- RESPONSIVE DESIGN CELULAR---------------------*/
 @media only screen and (max-width: 414px) {
     body {
-    
-       
-      background-color: lightgreen;
+          background-color: lightgreen;
     }
-  }
+    .header-top{
+        display:none;
+    }
+    .menu{
+        display: none;
+    }
+    .hamburguesa{
+        display: flex;
+        height: 30px;
+        width: 30px;
+        margin-right: 15%;
+        align-self: center;
+    }
+    .card-container{
+        flex-wrap: wrap;
+         }
+    .barra{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
   
