@@ -13,10 +13,7 @@ a{
 ul{
     list-style-type: none;
 }
-body{
-     font-family:;
-     font-weight: 300px;
-}
+
  img{
      max-width: 100%; /*(para que no rompa en responsive)*/
  }
@@ -209,17 +206,25 @@ margin: 1%;
    gap:1%;
    margin-bottom: 5%;
 }
-button{
-    width: 110px;
+
+.reset{
+    background-color: #8A8787;
+    width: 130px;
 height: 34px;
 border-radius: 15px;
 }
-.reset{
-    background-color: #8A8787;
-}
 .submit{
     background-color: #F0A83E;
+    width: 130px;
+height: 34px;
+border-radius: 15px;
 }
+.contacto{
+    color:#FFFFFF;
+}
+
+
+
  /*---------------------------FOOTER-------------------------------*/
 
 .footer-top{
@@ -257,14 +262,11 @@ border-radius: 15px;
     /*margin-left: 5%;*/
 }
 .footer-top span{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
     /*margin: 2%;*/
 }
-.footer-top i{
-    /*margin-top: 1.2%;
-    margin-left: 1%;*/
-}
+
 .barra{
     background-color: #F0A83E;
     color: #F3F3F3;
@@ -288,9 +290,7 @@ justify-content: space-between;
 
 /*----------------- RESPONSIVE DESIGN CELULAR---------------------*/
 @media only screen and (max-width: 414px) {
-    body {
-          background-color: lightgreen;
-    }
+   
     .header-top{
         display:none;
     }
@@ -311,4 +311,6 @@ justify-content: space-between;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-  
+    .barra{
+        height: 101px;
+}
